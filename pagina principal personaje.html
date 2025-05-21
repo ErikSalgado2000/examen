@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Francisco Morazan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #000000;">
+    <img src="img/logo.png" alt="Logo Institución" class="logo">
+    <div class="container">
+     
+      
+      <div id="encabezado">
+        <div >
+        <nav>
+        <ul class="menu">
+          <a href="index.html" class="logout-button">Cerrar sesión</a>
+          <li><a href="Pagina de inicio.html"> INICIO</a>
+          <li><a href="pagina principal mayas.html"> CIVILIZACION MAYA </a>
+            <ul>
+              <li><a href="Matematicas maya.html">Matematicas </a></li>
+              <li><a href="Economia maya.html">Economia </a></li>
+              <li><a href="Arquitectura maya.html">Arquitectura </a></li>
+            </ul>		
+          </li>
+          <li><a href="pagina principal chorotegas.html">CIVILIZACION CHOROTEGA </a>
+            <ul>
+              <li><a href="vida social chorotega.html">Vida Social</a></li>
+              <li><a href="economia chorotega.html">Economia</a></li>
+              <li><a href="Arte y ceramica chorotega.html">Arte y Ceramica</a></li>
+            </ul>
+          </li>
+          <li><a href="Pagina principal civilizacion lenca.html">CIVILIZACION LENCA</a>
+            <ul>
+              <li><a href="Arte y ceramica lenca.html">Arte y Ceramica</a></li>
+              <li><a href="Economia lenca.html">Economia</a></li>
+              <li><a href="religion y creencias lencas.html">Religion Y Creencias</a></li>
+            </ul>
+          </li>
+          <li><a href="pagina principal personaje.html">PERSONAJES</a>
+            <ul>
+              <li><a href="Lempira.html">Cacique Lempira</a></li>
+              <li><a href="Francisco Morazan.html">Francisco Morazan </a></li>
+              <li><a href="Dionisio de Herrera.html">Dionisio de Herrera</a></li>
+              <li><a href="Jose Trinidad Cabañas.html">Jose Trinidad Cabañas</a></li>
+              <li><a href="Policarpo Paz Garcia.html">Policarpo Paz Garcia</a></li>
+            </ul>
+          </li>
+
+         
+         
+          </li>
+        </ul>
+        </nav>
+      </div>
+    </div>
+ 
+  
+    <main class="contenido">
+        <font color="white">
+    <header>
+      <center><h1>PERSONAJES</h1></center>
+      <br>
+     
+    </header>
+
+  
+
+    <div style="max-width: 700px; margin: auto;">
+  
+      <button class="accordion" style="width: 100%; background: #131247; color: #eee; padding: 15px; border: none; cursor: pointer; font-size: 18px; text-align: left; outline: none; margin-bottom: 5px;">
+        Lempira
+      </button>
+      <div class="panel" style="background: #222; padding: 15px; display: none; margin-bottom: 10px;">
+        <p><strong>Líder indígena Lenca</strong> que defendió su territorio contra la conquista española en el siglo XVI. Símbolo nacional de resistencia y valentía.</p>
+      </div>
+  
+      <button class="accordion" style="width: 100%; background: #131247; color: #eee; padding: 15px; border: none; cursor: pointer; font-size: 18px; text-align: left; outline: none; margin-bottom: 5px;">
+        Francisco Morazán
+      </button>
+      <div class="panel" style="background: #222; padding: 15px; display: none; margin-bottom: 10px;">
+        <p>Político y militar hondureño, presidente de la Federación Centroamericana, defensor de la unidad y reformas liberales en Centroamérica durante el siglo XIX.</p>
+      </div>
+  
+      <button class="accordion" style="width: 100%; background: #131247; color: #eee; padding: 15px; border: none; cursor: pointer; font-size: 18px; text-align: left; outline: none; margin-bottom: 5px;">
+        Dionisio de Herrera
+      </button>
+      <div class="panel" style="background: #222; padding: 15px; display: none; margin-bottom: 10px;">
+        <p>Primer jefe de Estado de Honduras tras la independencia. Promotor de la educación y justicia, y presidente de la Federación Centroamericana.</p>
+      </div>
+  
+      <button class="accordion" style="width: 100%; background: #131247; color: #eee; padding: 15px; border: none; cursor: pointer; font-size: 18px; text-align: left; outline: none; margin-bottom: 5px;">
+        José Trinidad Cabañas
+      </button>
+      <div class="panel" style="background: #222; padding: 15px; display: none; margin-bottom: 10px;">
+        <p>Militar y presidente hondureño que defendió la soberanía nacional y promovió reformas liberales en el siglo XIX, reconocido por su honestidad y patriotismo.</p>
+      </div>
+  
+      <button class="accordion" style="width: 100%; background: #131247; color: #eee; padding: 15px; border: none; cursor: pointer; font-size: 18px; text-align: left; outline: none; margin-bottom: 5px;">
+        Policarpo Paz García
+      </button>
+      <div class="panel" style="background: #222; padding: 15px; display: none; margin-bottom: 10px;">
+        <p>Militar que encabezó el golpe de Estado en 1978, presidente provisional hasta 1982, facilitó la transición de Honduras hacia la democracia.</p>
+      </div>
+  
+    </div>
+  
+    <script>
+      const accordions = document.querySelectorAll('.accordion');
+      accordions.forEach(acc => {
+        acc.addEventListener('click', () => {
+          // Toggle current panel
+          const panel = acc.nextElementSibling;
+          const isVisible = panel.style.display === 'block';
+  
+          // Close all panels
+          document.querySelectorAll('.panel').forEach(p => p.style.display = 'none');
+  
+          // Toggle current panel display
+          panel.style.display = isVisible ? 'none' : 'block';
+        });
+      });
+    </script>
+  
+  </body>
+
+    
+      <footer>
+        &copy; 2025 ERIK SALGADO - Personajes  
+      </footer>
+    </section>
+</font>
+    
+</main>
+  </div>
+
+  
+</body>
+
+</html>

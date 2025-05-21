@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iniciar sesión</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="login-page">
+    <div class="login-container">
+      <form id="loginForm" class="login-form">
+        <h2>Iniciar sesión</h2>
+        <p>Ingresa con tu cuenta para continuar</p>
+        <input type="text" id="username" placeholder="Usuario" required />
+        <input type="password" id="password" placeholder="Contraseña" required />
+        <button type="submit">Acceder</button>
+        <div id="errorMsg">Usuario o contraseña incorrectos</div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const loginForm = document.getElementById('loginForm');
+    const errorMsg = document.getElementById('errorMsg');
+
+    loginForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const user = document.getElementById('username').value.trim();
+      const pass = document.getElementById('password').value.trim();
+
+      const userValido = 'usuario';   // Cambia aquí
+      const passValida = '1234';      // Cambia aquí
+
+      if(user === userValido && pass === passValida) {
+        window.location.href = 'pagina de inicio.html';  // Cambia por tu página
+      } else {
+        errorMsg.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+/* inicio formulario */
+
+.login-page {
+  background: #f3f3f3;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-page .login-container {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-page .login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-page .login-form h2 {
+  margin-bottom: 10px;
+  color: #2b2b2b;
+}
+
+.login-page .login-form p {
+  margin-bottom: 25px;
+  color: #555;
+  font-size: 14px;
+}
+
+.login-page .login-form input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.login-page .login-form input:focus {
+  border-color: #6264a7;
+}
+
+.login-page .login-form button {
+  padding: 12px;
+  background-color: #6264a7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-page .login-form button:hover {
+  background-color: #464775;
+}
+
+
+
+/* final formulario */
+
+/* css para adaptar a todos los dispostivos */
+@media (max-width: 768px) {
+  /* Estilos para móviles */
+}
+
+.container {
+  width: 80%;
+  padding: 2rem;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.item {
+  flex: 1 1 200px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*fin  para adaptar a todos los dispostivos  */
+
+
+/* css video */
+iframe {
+  width: 90%;
+  max-width: 700px;
+  height: 400px;
+  display: block;                  /*videos */
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+/*fin  css video */
+
+/* css imagen */
+.imagen {
+  width: 70%;
+  max-width: 300px;              /*imagen */
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+/*fin  css imagen   */
+
+/*  css menu    */
+
+.sidebar {
+  padding: 15px;
+}
+
+.menu {                     /*quita los puntitos del menu  */
+  list-style: none;
+}
+
+.menu > li {
+  margin-bottom: 15px;        /*Espacio entre cada elemento del menu  */
+}
+
+.menu > li > a {
+  color: rgb(253, 253, 253);
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 8px 10px;
+  background-color: #9c9c9c;
+  border-radius: 5px;
+}
+
+.menu > li > a:hover {
+  background-color: #000000;  /*menu paginas principales */
+}
+
+.menu li ul {
+  margin-top: 5px;
+  padding-left: 15px;  /*espacio de los submenus */
+}
+
+.menu li ul li a {
+  color: #818181;
+  font-size: 15px;
+  text-decoration: none;    /*estilo de los enlaces de submenu*/
+  padding: 5px;
+  display: block;
+}
+
+.menu li ul li a:hover {
+  background-color: #b9a54c;    /*sombras menu  */
+  border-radius: 4px;
+}
+
+/* Ocultar submenús por defecto */
+.menu li ul {
+  display: none;
+  position: absolute;
+  background-color: #9c9c9c;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+/* Mostrar submenús al pasar el cursor */
+.menu li:hover > ul {
+  display: block;
+}
+
+
+/*fin  menu    */
+
+
+
+
+
+/* css logo  */
+.logo {
+  width: 80px;     
+  height: auto;         /*css logo alineado a la izquierda */
+  display: block;
+  margin-left: 0;  
+}
+
+
+/*  final css logo  */
+
+
+/*  inicio css pagina */
+
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;/*tipo de letra  */
+  background: #f0efe0;/*color de fondo */
+  color: #050505;/*color de texto*/
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+.menu {
+  width: 160px;
+  
+  color: rgb(0, 0, 0);
+  padding: 20px;                  /*menu fijo*/ 
+  padding: 20px;             
+  position: sticky;
+  top: 0;
+  height: 223vh;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+.menu li {
+  margin: 15px 0;
+}
+.menu a {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu a:hover {
+  
+  padding: 10px;
+  border-radius: 10px;
+}
+.menu .logo {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contenido {
+  margin-left: 60px; /* espacio del contenido principal */
+  padding: 10px;
+}
+
+
+header h1 {
+  font-size: 2em;      /*tamaño de titulo*/
+  margin-bottom: 0;
+}
+section {
+  margin-bottom: 40px;
+  text-align: justify;
+}
+section img {
+  width: 20%;
+  margin: 1%;
+  border-radius: 8px;
+}
+footer {
+  background-color: #c9c9c9;   /*pie de pagina*/
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;    /*tablas que ocupan el ancho*/
+  margin: 20px 0;
+}
+th, td {
+  border: 1px solid #999;
+  padding: 10px;                 /*bordes definidos*/
+  text-align: center;
+}
+iframe {
+  border: none;
+}
+
+
+/*  final css pagina */
+
+
